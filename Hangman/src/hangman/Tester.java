@@ -15,9 +15,10 @@ public class Tester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Diccionario diccionario = new Diccionario();
         Juego juego = new Juego();
         juego.menu();
+        //EN LA ENTRADA IMPORTANTE CLASE CHARACTER, isAlphabetic
+        //EN ENTRADA GENERAR EXCEPCIONES
     }
     
 }

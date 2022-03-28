@@ -5,14 +5,50 @@
  */
 package hangman;
 
+import java.util.Scanner;
+
 /**
  *
  * @author ale
  */
 public class Diccionario {
-    private String palabras[];
+    protected final String palabras[];
     
     public Diccionario(){
+        palabras= new String[20];
+        palabras[0]="CARACOLA";
+        palabras[1]="PAPEL";
+        palabras[2]="PERRO";
+        palabras[3]="MONITOR";
+        palabras[4]="COCO";
+    }
+    
+    public void listarDiccionario(){
+        boolean bool=false;
+        System.out.println("Hay "+cantidadPalabras()+" palabras de 20.");
+        for (int i = 0; i < palabras.length && bool==false; i++) {
+            if(palabras[i]!=null)
+                System.out.println((i+1)+". " + palabras[i]);
+            else
+                bool = true;
+        }
         
+    }
+    public void actualizarDiccionario(){
+        if(cantidadPalabras()>=20){
+            System.out.println("Se ha alcanzado la máxima cantidad de palabras. No se puede introducir más.");
+        } else{
+            Scanner teclado = new Scanner(System.in);
+            System.out.println("Hay "+cantidadPalabras()+" palabras de 20.");
+            System.out.println("Introduce una palabra: ");
+            palabras[cantidadPalabras()]= teclado.next().toUpperCase();
+        }
+    }
+    public int cantidadPalabras(){
+        int i=0;
+        while(palabras[i]!=null){
+            i++;
+        }
+        return i;
     }
 }
