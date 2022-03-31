@@ -55,7 +55,7 @@ public class Diccionario {
         
     public int cantidadPalabras(){
         int i=0;
-        while(this.palabras[i]!=null){
+        while(palabras[i]!=null){
             i++;
         }
         return i;

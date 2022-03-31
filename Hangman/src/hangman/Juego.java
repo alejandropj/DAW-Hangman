@@ -36,7 +36,7 @@ public class Juego {
 
     public void menu() {
         Scanner teclado = new Scanner(System.in);
-        int opc;
+        int opc=0;
         do {
             System.out.println("Juego ahorcado.\n");
             System.out.println("\t1. Jugar.\n\t2. Gestionar diccionario.\n");
