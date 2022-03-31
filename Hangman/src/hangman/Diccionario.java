@@ -35,18 +35,27 @@ public class Diccionario {
         
     }
     public void actualizarDiccionario(){
+        String palabra = new String();
         if(cantidadPalabras()>=20){
             System.out.println("Se ha alcanzado la máxima cantidad de palabras. No se puede introducir más.");
         } else{
             Scanner teclado = new Scanner(System.in);
             System.out.println("Hay "+cantidadPalabras()+" palabras de 20.");
             System.out.println("Introduce una palabra: ");
-            palabras[cantidadPalabras()]= teclado.next().toUpperCase();
+            try{
+                palabra = teclado.next();
+                Comprobaciones.hayNumero(palabra);
+                //CORREGIR EXCEPCION
+                palabras[cantidadPalabras()]= palabra.toUpperCase();
+            }catch(introduccionNum ex){
+                System.out.println(ex.getMessage());
+            }
         }
     }
+        
     public int cantidadPalabras(){
         int i=0;
-        while(palabras[i]!=null){
+        while(this.palabras[i]!=null){
             i++;
         }
         return i;
