@@ -29,7 +29,7 @@ import static java.lang.Character.isAlphabetic;
 
 /**
  * Clase Comprobaciones. Tiene un método que arroja la excepción introduccionNum().
- * @author parjimal
+ * @author Alejandro Parra Jiménez
  */
 public class Comprobaciones {
     

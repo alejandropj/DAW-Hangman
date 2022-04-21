@@ -27,7 +27,7 @@ package hangman;
 
 /**
  * Clase introduccionNum, hereda de Exception.
- * @author parjimal
+ * @author Alejandro Parra Jiménez
  */
 public class introduccionNum extends Exception {
     

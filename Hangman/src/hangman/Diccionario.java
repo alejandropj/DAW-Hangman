@@ -29,7 +29,7 @@ import java.util.Scanner;
 
 /**
  * Clase Diccionario. Contiene las palabras para Juego, y las maneja él mismo.
- * @author ale
+ * @author Alejandro Parra Jiménez
  */
 public class Diccionario {
     /**
@@ -50,8 +50,7 @@ public class Diccionario {
     }
     
     /**
-     * Método que imprime las palabras que contiene el diccionario, e invoca a 
-     * <br> cantidadPalabras().
+     * Método que imprime las palabras que contiene el diccionario, e invoca a<br> cantidadPalabras().
      */
     public void listarDiccionario(){
         boolean bool=false;
@@ -65,8 +64,7 @@ public class Diccionario {
         
     }
     /**
-     * Método que invoca a cantidadPalabras(), analiza si hay huecos libres 
-     * <br>en palabras[] para introducir una nueva.
+     * Método que invoca a cantidadPalabras(), analiza si hay huecos libres<br>en palabras[] para introducir una nueva.
      */
     public void actualizarDiccionario(){
         String palabra = new String();

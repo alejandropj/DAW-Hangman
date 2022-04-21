@@ -32,7 +32,7 @@ import java.util.Scanner;
  * Clase Juego. Contiene la clase Diccionario y es encargada de iniciar el
  * juego.
  *
- * @author ale
+ * @author Alejandro Parra Jiménez
  */
 public class Juego {
 
@@ -48,9 +48,7 @@ public class Juego {
     protected ArrayList<Character> letras;
 
     /**
-     * Constructor vacío que inicializa el turno a 5, crea una instancia a
-     * Diccionario
-     * <br>y un ArrayList de las letras introducidas.
+     * Constructor vacío que inicializa el turno a 5, crea una instancia a Diccionario<br>y un ArrayList de las letras introducidas.
      */
     public Juego() {
         letras = new ArrayList();
@@ -109,7 +107,7 @@ public class Juego {
                 case 3:
                     break;
                 default:
-                    System.out.println("EXCEPCION DICCIONARIO.");
+                    System.out.println("Error. Vuelva a introducir una opción");
             }
         } while (opc != 3);
     }
@@ -140,10 +138,8 @@ public class Juego {
     }
 
     /**
-     * Método que llama a pintarJuego y se encarga de recoger la jugada del
-     * usuario
-     * <br> y la analiza.
-     *
+     * Método que llama a pintarJuego y se encarga de recoger la jugada del usuario y la analiza.
+     * 
      * @param palabraChar
      * @param auxiliarChar
      * @return si se ha acertado la palabra.
@@ -200,13 +196,12 @@ public class Juego {
     }
 
     /**
-     * Método que dibuja la palabra(con la sintaxis del ahorcado)
-     * <br> y las letras ya introducidas.
+     * Método que dibuja la palabra(con la sintaxis del ahorcado) y las letras ya introducidas.
      *
      * @param auxiliarChar
      */
     public void pintarJuego(char[] auxiliarChar) {
-        //huecos del ahorcado
+        //Huecos del ahorcado
         System.out.println("");
         for (int i = 0; i < palabra.length(); i++) {
             if (auxiliarChar[i] == '\u0000') {

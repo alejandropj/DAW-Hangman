@@ -27,7 +27,7 @@ package hangman;
 
 /**
  * Clase Tester.
- * @author ale
+ * @author Alejandro Parra Jiménez
  */
 public class Tester {
 
